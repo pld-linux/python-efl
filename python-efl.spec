@@ -220,7 +220,7 @@ Wiązania Pythona do biblioteki Evas.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %{__sed} -i -e '1s,/usr/bin/env python,/usr/bin/python,' \
 	examples/dbus/*.py \
